@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Hola Mundo! - Aplicación Simple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 ¡Hola Mundo!</h1>
+            <p class="subtitle">Aplicación simple de demostración</p>
+        </header>
+
+        <main>
+            <!-- Sección de Información -->
+            <section class="card">
+                <h2>📋 Información</h2>
+                <div id="info" class="info-box">
+                    <p>Cargando información...</p>
+                </div>
+            </section>
+
+            <!-- Sección de Contador -->
+            <section class="card">
+                <h2>🔢 Contador</h2>
+                <div class="contador-box">
+                    <div class="contador-display" id="contador-display">0</div>
+                    <div class="button-group">
+                        <button class="btn btn-danger" onclick="decrementarContador()">➖ Decrementar</button>
+                        <button class="btn btn-warning" onclick="resetContador()">🔄 Reiniciar</button>
+                        <button class="btn btn-success" onclick="incrementarContador()">➕ Incrementar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Saludo Personalizado -->
+            <section class="card">
+                <h2>👋 Saludo Personalizado</h2>
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="nombre-input" 
+                        placeholder="Escribe tu nombre..." 
+                        class="input-field"
+                    >
+                    <button class="btn btn-primary" onclick="enviarSaludo()">Enviar Saludo</button>
+                </div>
+                <div id="saludo-respuesta" class="respuesta-box"></div>
+            </section>
+
+            <!-- Sección de Características -->
+            <section class="card">
+                <h2>✨ Características</h2>
+                <ul id="features-list" class="features-list">
+                    <li>Cargando características...</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 - Aplicación Simple Hola Mundo | <span id="timestamp">Cargando...</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
